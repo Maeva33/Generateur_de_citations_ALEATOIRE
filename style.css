@@ -28,6 +28,11 @@ h1 {
     text-shadow: #FC0 1px 0 10px;
 }
 
+p {
+    font-size: 30px;
+    font-style: italic;
+}
+
 img {
     position: absolute;
     left: 0;
@@ -46,7 +51,9 @@ img {
     padding: 100px 300px;
     border-radius: 5px;
     background-color: #F5F5F5;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.2);
+    width: 500px;
+    height: 150px;
 }
 
 

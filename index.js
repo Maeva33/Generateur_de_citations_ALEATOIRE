@@ -17,17 +17,21 @@
 function RandomQuote() {  
     return Math.floor(Math.random() * quotes.length);  
 }
+
 // Fonction pour afficher une citation aléatoire:
 function lookRandom() { 
     const index = RandomQuote();
     const auteur = quotes[index].author;  
     const citation = quotes[index].quote;
+
 // Affichage de la citation et de son auteur:
-    document.getElementById("citation").textContent = quote; 
-    document.getElementById("auteur").textContent = `- ${author}`;  
+    document.getElementById("citation").textContent = citation; 
+    document.getElementById("auteur").textContent = `- ${auteur}`;  
 }
-// Écouteur d'événement pour le bouton "Nouvelle citation":
-document.getElementById("new-quote").addEventListener("click", lookRandom);
-// Appel de la fonction pour afficher une citation aléatoire au chargement de la page:
-lookRandom();
+// Ajout d'un gestionnaire d'événements au bouton "Nouvelle citation":
+document.getElementById("btn").addEventListener("click",lookRandom);
+
+
+
+
 
